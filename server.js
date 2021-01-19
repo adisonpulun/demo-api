@@ -1,12 +1,11 @@
-const express = require("express")
+const express = require('express');
 const app = express()
-const PORT = process.env.PORT || 8080
+const PORT = process.env.PORT || 8080;
 
-
-app.get("/",(req,res)=>{
-    res.json({result: "OK" ,data:["Hello Node.js" , "Hello Heroku"]})
+app.get("/" , (req ,res) => {
+    res.json({result: "ok" , data:["hello"]})
 })
 
-app.listen(PORT , ()=> {
-    console.log(`Sere is Running. ${PORT}`)
+app.listen(PORT , ()=>{
+    console.log(`Server is running . ${PORT}`)
 })
